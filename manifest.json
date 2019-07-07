@@ -1,7 +1,8 @@
 {
-    "files": {
-        "index.js": "69ea66dde5f18ecf2a1dc02174466b5742dc7fe14c1364d16a28ea108b3eb5b7",
-        "README.md": "8846374d7c9aecdc1c4697cb0c83095e0eadc8cd3d6d270dabd1e0e9ea0eb156"
-    },
-    "defs": {}
+  "files": {
+    "index.js": "d8fafb2777d47b3b09bba47e5ec84ffc8f23b674ca6d5b8afc77a4826ce85122",
+    "PacketSender.js": "189d487a41b314126c17b226aa1386df250ce0f14ffc91d3f8888069eecb5bd9",
+    "README.md": "8846374d7c9aecdc1c4697cb0c83095e0eadc8cd3d6d270dabd1e0e9ea0eb156"
+  },
+  "defs": {}
 }

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "generated-manifest.json": "005bd5cda032c412856d6fad756323c8c602bca7a16be5ac55f7130775a2562c",
+    "index.js": "d8fafb2777d47b3b09bba47e5ec84ffc8f23b674ca6d5b8afc77a4826ce85122",
+    "manifest.json": "d0760acf4b6a2e910cf243dd9d4f7db1ffff5155a942d59dc14679f6c409f3cb",
+    "module.json": "96fe87195775cb2672b4d4667420e99a47a2066189feed9765c1cfe28de1a695",
+    "Newtonsoft.Json.dll": "564e6201dbf6354460d9ca180f0752d50dd7496fff49e05f67a9af42a2e772c7",
+    "PacketSender.js": "189d487a41b314126c17b226aa1386df250ce0f14ffc91d3f8888069eecb5bd9",
+    "README.md": "67158e05b486f9a11ed56d039cc6505c3ebad18cfef604301e9a3fe96a64cff0"
+  }
+}
