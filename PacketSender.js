@@ -6,7 +6,7 @@ module.exports = class PacketSender {
         C_REQUEST_CONTRACT: 'S_REPLY_REQUEST_CONTRACT',
         C_SHOW_PARCEL_MESSAGE: 'S_PARCEL_READ_RECV_STATUS',
         C_RECV_PARCEL: 'S_RECV_PARCEL',
-        C_DELETE_PARCEL: 'S_DELETE_PARCEL',
+        //C_DELETE_PARCEL: 'S_DELETE_PARCEL',
     };
 
     constructor(mod) {
@@ -29,19 +29,19 @@ module.exports = class PacketSender {
         return sleep(100);
     }
 
-    async claimParcelItems({id}) {
-        await this.sendPacket('C_SHOW_PARCEL_MESSAGE', 1, {id});
+    async claimParcelItems({ id }) {
+        await this.sendPacket('C_SHOW_PARCEL_MESSAGE', 1, { id });
         await sleep(100);
-        return this.sendPacket('C_RECV_PARCEL', 1, {id});
+        return this.sendPacket('C_RECV_PARCEL', 1, { id });
     }
 
     async cancelContract(contractId) {
-        await this.sendPacket('C_CANCEL_CONTRACT', 1, {type: 8, id: contractId});
+        await this.sendPacket('C_CANCEL_CONTRACT', 1, { type: 8, id: contractId });
         return sleep(200);
     }
 
     async requestContract() {
-        return this.sendPacket('C_REQUEST_CONTRACT', 1, {type: 8});
+        return this.sendPacket('C_REQUEST_CONTRACT', 1, { type: 8 });
     }
 
     async sendPacket(packet, version, payload) {
@@ -50,7 +50,8 @@ module.exports = class PacketSender {
         const responsePacket = this.responsePackets[packet];
         if (!responsePacket) return;
 
-        return this.awaitResult(responsePacket).catch(err => console.error(err.messages));
+        return this.awaitResult(responsePacket)
+          .catch(err => console.error('[mail]', `an error occurred while awaiting for response for ${packet}`, err));
     }
 
     async awaitResult(packet, timeoutTime = 10 * 1000) {

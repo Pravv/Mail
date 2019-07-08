@@ -1,8 +1,8 @@
 {
   "files": {
     "index.js": "d8fafb2777d47b3b09bba47e5ec84ffc8f23b674ca6d5b8afc77a4826ce85122",
-    "PacketSender.js": "189d487a41b314126c17b226aa1386df250ce0f14ffc91d3f8888069eecb5bd9",
-    "README.md": "8846374d7c9aecdc1c4697cb0c83095e0eadc8cd3d6d270dabd1e0e9ea0eb156"
+    "PacketSender.js": "2e3ced74b4f0c5cdedbf4544d98acca44cf808566ce17203522d4fcf01d2ffee",
+    "README.md": "67158e05b486f9a11ed56d039cc6505c3ebad18cfef604301e9a3fe96a64cff0"
   },
   "defs": {}
 }
